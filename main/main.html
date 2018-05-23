@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leo Lin</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+<link href="../css/bootstrap.css" rel="stylesheet">
+
+    <link href="../css/app.css" rel="stylesheet">
+</head>
+<body>
+<div class="hero-image">
+    <div class="hero-text">
+        <h1 class="font-open-sans">Leo Lin</h1>
+        <p class="font-montserrat">Developer. Musician. Photographer.</p>
+        <button type="button" class="btn btn-outline-light font-montserrat" data-toggle="tab"
+                data-target="#contact">Contact
+        </button>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="height-top-30 row">
+        <div class="offset-4 offset-md-3">
+            <img class="profile-picture rounded-circle img-fluid" src="https://app.guusto.com/senderphotos/y7fh43x3hx.jpeg"/>
+        </div>
+        <div class="col-12 col-md-6">
+            <p class="font-montserrat">
+                A student at University of British Columbia and a passionate programmer.</p>
+            <p class="font-montserrat"> Here are some projects
+                that I have worked on...
+            </p>
+        </div>
+    </div>
+
+    <div class="row height-top-30">
+        <div class="btn-group btn-group-lg centre">
+            <button type="button" class="btn btn-outline-primary font-montserrat" data-toggle="tab"
+                    data-target="#programming">Programming
+            </button>
+            <button type="button" class="btn btn-outline-warning font-montserrat" data-toggle="tab"
+                    data-target="#music">Music
+            </button>
+            <button type="button" class="btn btn-outline-danger font-montserrat" data-toggle="tab"
+                    data-target="#photography">
+                Photography
+            </button>
+        </div>
+    </div>
+
+    <div class="tab-content height-top-30">
+
+        <div class="tab-pane tabfade active" id="programming" role="tabpanel" aria-labelledby="programming">
+            <h2 class="font-open-sans">Programming Projects</h2>
+           <!-- FIRST ROW -->
+            <div class="card-deck height-top-30">
+                <div class="card border-primary" style="width: 18rem;">
+                    <img class="card-img-top"
+                         src="../assets/guusto.png"
+                         alt="Guusto">
+                    <div class="card-body">
+                        <h5 class="card-title">Guusto</h5>
+                        <p class="card-text">
+                            Guusto is a multi-platform gifting app/employee recognition app used mainly by corporates but
+                            it is also available for public usage.
+                            The idea is when a gift card is sent through Guusto using the web platform or mobile
+                            application,
+                            it is available for redemption through any
+                            partnered merchants (Amazon, Best Buy etc.)
+                        </p>
+                        <a href="http://guusto.com" target="_blank" class="btn btn-primary">Visit Site</a>
+                        <a href="#guusto" data-toggle="tab" target="_blank" class="btn btn-info">See Details</a>
+                    </div>
+                </div>
+
+                <div class="card border-primary" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/happybox.png" alt="HappyBox">
+                    <div class="card-body">
+                        <h5 class="card-title">HappyBox</h5>
+                        <p class="card-text">
+                            HappyBox is an application made under 24 hours in a mental-health themed hackathon.
+                            In this project, I worked with PHP, HTML and CSS to create a platform for suggestions/advices on
+                            combating depression.
+                        </p>
+                        <a href="https://happyboxtest.000webhostapp.com/" target="_blank" class="btn btn-primary">Visit Site</a>
+                        <a href="https://github.com/mdctleo/HappyBox" target="_blank" class="btn btn-info">See Code</a>
+                    </div>
+                </div>
+
+                <div class="card border-primary" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/spaceguy.png" alt="SpaceGuy">
+                    <div class="card-body">
+                        <h5 class="card-title">SpaceGuy</h5>
+                        <p class="card-text">A little retro game I made for Android right after my first software
+                            development class. User controls a character on screen and attempts to dodge incoming
+                            asteroids for a highscore. It is written in Java.
+                        </p>
+                        <a href="../assets/app-debug.apk" class="btn btn-primary" download>Download apk</a>
+                        <a href="https://github.com/mdctleo/SpaceGuy" target="_blank" class="btn btn-info">See Code</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--SECOND ROW-->
+
+            <div class="card-deck height-top-30">
+                <div class="card border-primary" style="width: 18rem;">
+                    <img class="card-img-top"
+                         src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/TransLink_Vancouver_logo.svg/1200px-TransLink_Vancouver_logo.svg.png"
+                         alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Buses"R"Us</h5>
+                        <p class="card-text">
+                            A final project in one of my class. This app allows user to see bus routes/bus arrival time
+                            for buses ran by the company translink in Vancouver.
+                            It is written for Android using Java.
+                        </p>
+                        <a href="https://github.com/mdctleo/BusesAreUs" class="btn btn-info" target="_blank">See Code</a>
+                    </div>
+                </div>
+
+                <div class="card card-hide">
+                </div>
+
+                <div class="card card-hide">
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="tab-pane tabfade" id="music" role="tabpanel" aria-labelledby="music">
+            <h2 class="font-open-sans">Music Projects</h2>
+            <div class="card-deck height-top-30">
+                <div class="card border-warning" style="width: 18rem;">
+                    <img class="card-img-top"
+                         src="../assets/music.png"
+                         alt="music">
+                    <div class="card-body">
+                        <h5 class="card-title">Baptisim</h5>
+                        <p class="card-text">
+                            This was my final project for one of my music technology class, it is made for 8 channels surround sound.
+                            The piece is named Baptism since a friend said the middle section reminded him of the montage from The Godfather.
+                            It starts out with some interesting sounds altered using filters, frequency shift etc. with a
+                            foreshadowing bass line to the middle section.
+                            Then we advance to the more dissonant section which is finally resolved by all the channels coming together
+                            using an arrangement of MIDI instruments playing a little original melodic composition.
+                            The ending inserts some new material while being a reminiscent of the beginning.
+                        </p>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/447255927%3Fsecret_token%3Ds-Oqtnp&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        <a href="../assets/baptisimstereo.aiff" class="btn btn-info height-top-10" download>Download Stereo</a>
+                        <a href="../assets/baptisimComplete.zip" class="btn btn-info height-top-10" download>Download Complete 8 mono</a>
+
+                    </div>
+                </div>
+
+                <div class="card border-warning" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/maxpaint.png" alt="HappyBox">
+                    <div class="card-body">
+                        <h5 class="card-title">Max Paint</h5>
+                        <p class="card-text">
+                            The idea was to make a microsoft paint like program using MaxMsp and the power of abstraction.
+                            Due to time constraints, I was only able to make a prototype that can draw two simple shapes.
+                            But it implemented the basic idea of abstracting MaxMSP, hiding the ugly code to provide a UI
+                            experience similar to microsoft paint.
+                        </p>
+                        <a href="../assets/maxpaint.zip" class="btn btn-info" download>Download Patch</a>
+                    </div>
+                </div>
+
+                <div class="card border-warning" style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/music.png" alt="music">
+                    <div class="card-body">
+                        <h5 class="card-title">Jouney to Knowledge</h5>
+                        <p class="card-text">A medley of sounds I hear on my way to school,
+                            I wonder what it will sound like if I mash all of them together....
+                        </p>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/447241422%3Fsecret_token%3Ds-SZvs1&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        <a href="../assets/JourneyToKnowledgeLin.wav" class="btn btn-info height-top-10" download>Download WAV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane tabfade" id="photography" role="tabpanel" aria-labelledby="photography">
+            Coming soon...
+        </div>
+
+        <div class="tab-pane tabfade" id="guusto" role="tabpanel" aria-labelledby="guusto">
+            <h2 class="font-open-sans">Guusto</h2>
+            <p class="font-montserrat">I spent 8 month as a full-stack junior developer co-op at Guusto,
+                during that time I received a lot of hands-on experience developing new features,
+                debugging and working with a team through the development cycle.
+                I worked with HTML, CSS and AngularJs for frontend and Java with spring
+                framework in the backend.
+                Here are some examples of the issues I worked on:
+            </p>
+
+                <p class="font-montserrat">
+                    The ability to split a received gift card to be redeemed at different partnered venues,
+                    e.g. a 100 dollar gift card can be split to be redeemed for 50 dollar at Best Buy and 50 dollar
+                    at Amazon.
+                </p>
+                <img src="../assets/splitgift.png" class="img-fluid">
+
+
+                <p class="font-montserrat height-top-30">
+                    An admin overview panel for managers to view the balance, money spent on purchasing gifts etc.
+                    for the different teams in their company.
+                </p>
+                <img src="../assets/adminpanel.png" class="img-fluid">
+
+                <p class="font-montserrat height-top-30">
+                    Implementing a pre-existing feature in the web platform for android, the teams functionality.
+                    It allows team members in a company to nominate each other for their work, and keeps feeds +
+                    leaderboard for nomination activity as part of the employee recognition aspect of the application.
+                </p>
+
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/teams1.png" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="../assets/teams2.png" class="img-fluid">
+                </div>
+
+            </div>
+
+            <div class="height-top-30">
+            <hr/>
+                <p>Some other notable projects that I worked on include writing a customized link shortener so
+                    we do not have to use google's link API and be bounded by their request limits (turns out they were cancelling
+                    their service also after I finished the project). Another interesting one is setting up weekly auto
+                    reminder email using sendgrid API, there are many more but instead of listing them I will put etc.
+                </p>
+
+                <div class="row height-bot-30">
+                <button type="button" class="btn btn-outline-primary font-montserrat centre" data-toggle="tab"
+                        data-target="#programming">Take me back!
+                </button>
+                </div>
+            </div>
+
+
+            </div>
+
+        <div class="tab-pane tabfade" id="contact" role="tabpanel" aria-labelledby="contact">
+            <h2 class="font-open-sans">Contact</h2>
+            <p class="font-montserrat"><a href="mailto:mdctleo@hotmail.com" target="_top">mdctleo@hotmail.com</a> </p>
+            <p class="font-montserrat"><a href="https://github.com/mdctleo" target="_blank">Github</a></p>
+        </div>
+
+
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
