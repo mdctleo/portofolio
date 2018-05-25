@@ -7,6 +7,11 @@
 <link href="../css/bootstrap.css" rel="stylesheet">
 
     <link href="../css/app.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 </head>
 <body>
 <div class="hero-image">
@@ -21,13 +26,13 @@
 
 <div class="container">
 
-    <div class="height-top-30 row">
+    <div id="tabNav" class="height-top-30 row">
         <div class="offset-4 offset-md-3">
             <img class="profile-picture rounded-circle img-fluid" src="https://app.guusto.com/senderphotos/y7fh43x3hx.jpeg"/>
         </div>
         <div class="col-12 col-md-6">
             <p class="font-montserrat">
-                A student at University of British Columbia and a passionate programmer.</p>
+                A third-year student at University of British Columbia and a passionate software developer.</p>
             <p class="font-montserrat"> Here are some projects
                 that I have worked on...
             </p>
@@ -49,7 +54,7 @@
         </div>
     </div>
 
-    <div class="tab-content height-top-30">
+    <div id="tabContent" class="tab-content height-top-30 height-bot-30">
 
         <div class="tab-pane tabfade active" id="programming" role="tabpanel" aria-labelledby="programming">
             <h2 class="font-open-sans">Programming Projects</h2>
@@ -70,7 +75,7 @@
                             partnered merchants (Amazon, Best Buy etc.)
                         </p>
                         <a href="http://guusto.com" target="_blank" class="btn btn-primary">Visit Site</a>
-                        <a href="#guusto" data-toggle="tab" target="_blank" class="btn btn-info">See Details</a>
+                        <a href="#guusto" data-toggle="tab" class="btn btn-info" onclick="guustoScroll()">See Details</a>
                     </div>
                 </div>
 
@@ -185,7 +190,78 @@
         </div>
 
         <div class="tab-pane tabfade" id="photography" role="tabpanel" aria-labelledby="photography">
-            Coming soon...
+            <h2 class="font-open-sans">Photography</h2>
+            <div class="row">
+                <div class="col-12 col-md">
+                    <a href="../assets/1.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/1.jpg" class="img-fluid height-top-10" data-toggle="modal">
+                    </a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="../assets/2.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/2.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="../assets/3.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/3.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md">
+                    <a href="../assets/4.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/4.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="../assets/5.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/5.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="../assets/6.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/6.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row height-top-10">
+                <div class="col-12 col-md">
+                    <a href="../assets/7.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/7.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="../assets/8.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/8.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="../assets/9.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/9.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row height-top-10">
+                <div class="col-12 col-md">
+                    <a href="../assets/10.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/10.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="../assets/11.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/11.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="../assets/12.jpg" data-toggle="lightbox" data-gallery="photos">
+                        <img src="../assets/12.jpg" class="img-fluid height-top-10">
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="tab-pane tabfade" id="guusto" role="tabpanel" aria-labelledby="guusto">
@@ -250,6 +326,7 @@
             <h2 class="font-open-sans">Contact</h2>
             <p class="font-montserrat"><a href="mailto:mdctleo@hotmail.com" target="_top">mdctleo@hotmail.com</a> </p>
             <p class="font-montserrat"><a href="https://github.com/mdctleo" target="_blank">Github</a></p>
+            <p class="font-montserrat"><a href="../assets/Resume.pdf" download>resume</a></p>
         </div>
 
 
@@ -257,11 +334,48 @@
     </div>
     </div>
 
-
     </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    function guustoScroll(){
+        var element = document.getElementById('tabContent');
+        element.scrollIntoView();
+    }
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+
+    var photography = [
+        "../assets/1.jpg",
+        "../assets/2.jpg",
+        "../assets/3.jpg",
+        "../assets/4.jpg",
+        "../assets/5.jpg",
+        "../assets/6.jpg",
+        "../assets/7.jpg",
+        "../assets/8.jpg",
+        "../assets/9.jpg",
+        "../assets/10.jpg",
+        "../assets/11.jpg",
+        "../assets/12.jpg"
+    ];
+
+    (function preparePreloadImage(){
+        var i;
+        for(i = 0; i < photography.length; i++){
+            preloadImage(photography[i]);
+        }
+
+    })();
+
+    function preloadImage(url)
+    {
+        var img=new Image();
+        img.src=url;
+    }
+</script>
 
 </body>
 </html>
